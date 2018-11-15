@@ -1,11 +1,12 @@
 # Convnet Demo
 ## A demonstration of convnets using Pytorch + fastai
 
-
-This notebook can be thought of as an introduction to my paper, Using 
-three-band SDSS imaging to predict gas-phase metallicity 
-[(Wu & Boada 2018)](https://arxiv.org/abs/1810.12913).
-
+This can be thought of as an introduction to my paper, "Using 
+three-band SDSS imaging to predict gas-phase metallicity" 
+[(Wu & Boada 2018)](https://arxiv.org/abs/1810.12913). 
+The repository contains some training and testing data
+for which we can use convolutional neural networks (convnets)
+to predict gas-phase metallicity.
 
 ## Table of contents
 - [Usage](#usage)
