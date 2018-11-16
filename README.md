@@ -37,11 +37,11 @@ source activate fastai-cpu
 pip install torchtext==0.2.3
 ```
 
-You will also need to symlink to the fastai library into the `./notebooks`
+You will also need to symlink to the fastai library into the `./notebook`
 directory (or add it to your Python `sys.path`). To do the former, simply 
 do something like:
 ```
-ln -s /path/to/fastai-git-repo/fastai ./notebooks/fastai
+ln -s /path/to/fastai-git-repo/fastai ./notebook/fastai
 ```
 
 ## Usage
@@ -51,7 +51,7 @@ In order to execute the Jupyter notebook(s), simply make sure you are in the
 jupyter notebook
 ```
 
-You can then navigate to the `./notebooks` directory and open whatever
+You can then navigate to the `./notebook` directory and open whatever
 notebook you want.
 
 ## Data
