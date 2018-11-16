@@ -56,4 +56,6 @@ notebook you want.
 
 ## Data
 I snagged 500 random sources from the actual data set used in our paper. These
-can directly be downloaded via Github since they total about 10 MB.
+are directly bundled in this repository since the images are small and they
+only total about 10 MB. There are 400 training images (which should be broken
+up into roughly an 320/80 training/validation split) and 100 test images.
