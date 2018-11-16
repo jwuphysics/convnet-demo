@@ -14,20 +14,20 @@ to predict gas-phase metallicity.
 - [Data](#data)
 
 ## Install
-Download this repository by running
-```
-git clone https://github.com/jwuphysics/convnet-demo.git
-cd convnet-demo
-```
 
-Install version 0.7.0 of the [fastai](https://github.com/fastai/fastai) machine 
-learning and [Pytorch](https://pytorch.org/). This can be accomplished 
-by running the following (assuming you don't have a GPU):
+### fastai
+
+First install version 0.7.0 of [fastai](https://github.com/fastai/fastai) 
+and the corresponding [Pytorch](https://pytorch.org/). You can do this
+by executing the following (assuming you don't have a GPU):
 ```
 git clone https://github.com/fastai/fastai.git
 cd fastai 
 conda env create -f environment-cpu.yml
 ```
+
+If you do have a GPU, you can swap out the last line for
+`conda env create -f environment.yml`.
 
 Activate your environment and downgrade the Pytorch `torchtext` 
 package (my code won't work with `torchtext>=0.3`.):
@@ -37,11 +37,19 @@ source activate fastai-cpu
 pip install torchtext==0.2.3
 ```
 
-You will also need to symlink to the fastai library into the `./notebook`
-directory (or add it to your Python `sys.path`). To do the former, simply 
-do something like:
+### Clone this repo
+
+Download this repository by running
 ```
-ln -s /path/to/fastai-git-repo/fastai ./notebook/fastai
+git clone https://github.com/jwuphysics/convnet-demo.git
+cd convnet-demo
+```
+
+You will also need to symlink to the fastai library into the `./notebook`
+directory (or add it to your Python `sys.path`). You can create a symlink
+using the command
+```
+ln -s ../fastai/fastai ./notebook/fastai
 ```
 
 ## Usage
