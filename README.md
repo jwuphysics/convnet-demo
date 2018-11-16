@@ -9,20 +9,19 @@ for which we can use convolutional neural networks (convnets)
 to predict gas-phase metallicity.
 
 ## Table of contents
-- [Usage](#usage)
 - [Install](#install)
+- [Usage](#usage)
 - [Data](#data)
 
-## Usage
+## Install
 Download this repository by running
 ```
 git clone https://github.com/jwuphysics/convnet-demo.git
 cd convnet-demo
 ```
 
-## Install
-Download version 0.7.0 of the [fastai](https://github.com/fastai/fastai) machine 
-learning and [Pytorch](https://pytorch.org/). This can be installed 
+Install version 0.7.0 of the [fastai](https://github.com/fastai/fastai) machine 
+learning and [Pytorch](https://pytorch.org/). This can be accomplished 
 by running the following (assuming you don't have a GPU):
 ```
 git clone https://github.com/fastai/fastai.git
@@ -31,7 +30,7 @@ conda env create -f environment-cpu.yml
 ```
 
 Activate your environment and downgrade the Pytorch `torchtext` 
-package (my code won't work with `torchtext>=3.0`.):
+package (my code won't work with `torchtext>=0.3`.):
 
 ```
 source activate fastai-cpu
@@ -44,6 +43,16 @@ do something like:
 ```
 ln -s /path/to/fastai-git-repo/fastai ./notebooks/fastai
 ```
+
+## Usage
+In order to execute the Jupyter notebook(s), simply make sure you are in the 
+`fastai-cpu` environment, and then serve up a Jupyter notebook:
+```
+jupyter notebook
+```
+
+You can then navigate to the `./notebooks` directory and open whatever
+notebook you want.
 
 ## Data
 I snagged 500 random sources from the actual data set used in our paper. These
