@@ -4,3 +4,4 @@ models
 *.filenames
 fastai
 __pycache__
+get_images.sh
