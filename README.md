@@ -15,9 +15,17 @@ to predict gas-phase metallicity.
 
 ## Install
 
+### Clone this repo
+
+Download this repository by running
+```
+git clone https://github.com/jwuphysics/convnet-demo.git
+cd convnet-demo
+```
+
 ### fastai
 
-First install version 0.7.0 of [fastai](https://github.com/fastai/fastai)
+Install version 0.7.0 of [fastai](https://github.com/fastai/fastai)
 and the corresponding [Pytorch](https://pytorch.org/). You can do this
 by executing the following (assuming you don't have a GPU):
 
@@ -29,12 +37,9 @@ pip install fastai==0.7.0
 pip install torchtext==0.2.3
 ```
 
-### Clone this repo
-
-Download this repository by running
+Note that if you do have a GPU, you can instead run: 
 ```
-git clone https://github.com/jwuphysics/convnet-demo.git
-cd convnet-demo
+conda env create -f environment.yml
 ```
 
 ## Usage
