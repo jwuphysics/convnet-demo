@@ -29,7 +29,6 @@ pip install fastai==0.7.0
 pip install torchtext==0.2.3
 ```
 
-
 ### Clone this repo
 
 Download this repository by running
