@@ -1,12 +1,11 @@
 # Convnet Demo
 ## A demonstration of convnets using Pytorch + fastai
 
-This can be thought of as an introduction to my paper, "Using 
-three-band SDSS imaging to predict gas-phase metallicity" 
-[(Wu & Boada 2018)](https://arxiv.org/abs/1810.12913). 
-The repository contains some training and testing data
-for which we can use convolutional neural networks (convnets)
-to predict gas-phase metallicity.
+This repository can be thought of as an introduction to my paper, 
+["Using three-band SDSS imaging to predict gas-phase metallicity"](https://arxiv.org/abs/1810.12913). 
+Here I give a demonstration of how to use the fastai and Pytorch 
+libraries to train convolutional neural networks (convnets). We use the
+convnets to predict gas-phase metallicity from images.
 
 ## Table of contents
 - [Install](#install)
@@ -49,9 +48,22 @@ the `fastai-cpu` environment, and then serve up a Jupyter notebook.
 You can then navigate to the `./notebook` directory and open whatever
 notebook you want.
 
+The notebook `Pytorch and fastai demo.ipynb` contains some information
+and instructions on getting started with writing a basic Pytorch convnet.
+I've also included some fastai functionality such as finding an optimal
+learning rate, cyclical learning rate schedules, and data augmentation.
+
+The notebook `Image resolution demo.ipynb` shows examples for how to 
+resize images with fastai and gives examples how to make predictions 
+using low-resolution images with a super simple network.
+
 ## Data
 I snagged 500 random objects from the actual data set used in our paper. 
 These are directly bundled in this repository since the images are small 
 and they only total about 10 MB. There are 400 training images (which 
 should be broken up into roughly an 320/80 training/validation split) 
 and 100 test images.
+
+If you want the full SDSS data set that we have used in the paper, please
+see the [other repo](https://github.com/jwuphysics/galaxy-cnns), which 
+contains instructions for querying the data.
