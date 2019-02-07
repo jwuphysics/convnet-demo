@@ -1,5 +1,6 @@
 tmp
 models
+test-shuffled
 .ipynb_checkpoints
 *.filenames
 fastai
